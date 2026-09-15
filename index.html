@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #222;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00c6ff;
+        }
+
+        /* Section Title */
+        h1 {
+            text-align: center;
+            margin: 30px 0;
+            color: #333;
+        }
+
+        /* Gallery Layout */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px 40px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 15px rgba(0,0,0,0.3);
+        }
+
+        section {
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="#nature">Nature</a>
+    <a href="#animals">Animals</a>
+    <a href="#travel">Travel</a>
+    <a href="#food">Food</a>
+    <a href="#art">Art</a>
+</nav>
+
+<!-- PAGE 1 -->
+<section id="nature">
+    <h1>🌿 Nature Gallery</h1>
+    <div class="gallery">
+        <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-souvenirpixels-417074.jpg&fm=jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2RgoNrHq5hpbqCfDLHT40jaHr65jZK9ciKA&s">
+        <img src="https://thumbs.dreamstime.com/b/autumn-fall-nature-scene-autumnal-park-beautiful-77869343.jpg">
+        <img src="https://i.pinimg.com/originals/9c/b0/70/9cb070d62dc738a0c3a1a408d68e4af5.jpg">
+    </div>
+</section>
+
+<!-- PAGE 2 -->
+<section id="animals">
+    <h1>🐾 Animals Gallery</h1>
+    <div class="gallery">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/050/393/628/small/cute-curious-gray-and-white-kitten-in-a-long-shot-photo.jpg">
+        <img src="https://media.istockphoto.com/id/483529411/photo/big-lion-lying-on-savannah-grass.jpg?s=612x612&w=0&k=20&c=ph1pf60RsF-CMC-yA__MaRbWLxMVLfUviDwF5qx-9gI=">
+        <img src="https://www.shutterstock.com/image-photo/panda-eating-shoots-bamboo-rare-600nw-2359089287.jpg">
+        <img src="https://cdn.britannica.com/94/494-050-A674AD3A/Fallow-deer-dama-dama.jpg">
+    </div>
+</section>
+
+<!-- PAGE 3 -->
+<section id="travel">
+    <h1>✈ Travel Gallery</h1>
+    <div class="gallery">
+        <img src="https://img.freepik.com/free-photo/couple-family-traveling-together_1150-7772.jpg?semt=ais_hybrid&w=740&q=80">
+        <img src="https://t4.ftcdn.net/jpg/00/65/48/25/360_F_65482539_C0ZozE5gUjCafz7Xq98WB4dW6LAhqKfs.jpg">
+        <img src="https://img.freepik.com/free-photo/beautiful-girl-standing-boat-looking-mountains-ratchaprapha-dam-khao-sok-national-park-surat-thani-province-thailand_335224-849.jpg?semt=ais_hybrid&w=740&q=80">
+        <img src="https://img.freepik.com/free-photo/woman-with-hat-sitting-chairs-beach-beautiful-tropical-beach-woman-relaxing-tropical-beach-koh-nangyuan-island_335224-1110.jpg?semt=ais_hybrid&w=740&q=80">
+    </div>
+</section>
+
+<!-- PAGE 4 -->
+<section id="food">
+    <h1>🍔 Food Gallery</h1>
+    <div class="gallery">
+        <img src="https://blog.swiggy.com/wp-content/uploads/2024/02/Masala-Dosa-1024x538.jpg">
+        <img src="https://blog.swiggy.com/wp-content/uploads/2024/03/Biryani-2-1024x538.jpg">
+        <img src="https://images.yourstory.com/production/document_image/mystoryimage/xoglsb22-idli-sambar.jpg?mode=crop&crop=faces&ar=2%3A1&format=auto&w=1920&q=75">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/049/991/002/small/a-variety-of-fast-food-and-junk-food-items-displayed-together-on-a-clean-white-background-the-assortment-includes-a-juicy-cheeseburger-with-melted-cheese-and-fresh-toppings-free-photo.JPG">
+    </div>
+</section>
+
+<!-- PAGE 5 -->
+<section id="art">
+    <h1>🎨 Art Gallery</h1>
+    <div class="gallery">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCJ65F2_QnAOM8r4wFAmbgvHi8XiaodDM2Yg&s">
+        <img src="https://i.ytimg.com/vi/08s7PghDxNQ/maxresdefault.jpg">
+        <img src="https://media.istockphoto.com/id/543465140/photo/oil-painting-of-eiffel-tower-france-art-work.jpg?s=612x612&w=0&k=20&c=jorVhJXuNMwX2lChQAch57r_gFWibTG-TQEtcHtrHKU=">
+        <img src="https://t3.ftcdn.net/jpg/02/73/22/74/360_F_273227473_N0WRQuX3uZCJJxlHKYZF44uaJAkh2xLG.jpg">
+    </div>
+</section>
+
+</body>
+</html>
